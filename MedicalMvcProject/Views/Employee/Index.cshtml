@@ -1,0 +1,36 @@
+﻿@using Entity
+@model List<EmployeeDetail>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<table class="table table-hover table-rounded table-striped border gy-7 gs-7">
+    <thead>
+        <tr class="fw-bold fs-6 text-gray-800 border-bottom-2 border-gray-200">
+            <th>Personel Kodu</th>
+            <th>Personel Adı</th>
+            <th>Personel Telefon</th>
+            <th>Personel Mail</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (EmployeeDetail hsp in Model)
+        {
+            <tr>
+                <td>@hsp.Currents.CurrentNo</td>
+                <td>@hsp.Currents.CurrentName</td>
+                <td>@hsp.Currents.CurrentPhone</td>
+                <td>@hsp.Currents.CurrentMail</td>
+                <td>
+                    <div class="float-end">
+                        @Html.ActionLink("Update", "Update", "Hospital", new { pId = hsp.Id }, new { @class = "btn btn-primary btn-sm" })
+                        @Html.ActionLink("Delete", "Delete", "Hospital", new { pId = hsp.Id }, new { @class = "btn btn-danger btn-sm" })
+                    </div>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+
