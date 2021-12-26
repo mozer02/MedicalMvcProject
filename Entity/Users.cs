@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EntityLayer
+namespace Entity
 {   [Table("tblUsers")]
     public class Users
     {

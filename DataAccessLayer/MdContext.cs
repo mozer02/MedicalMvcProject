@@ -1,4 +1,4 @@
-﻿using EntityLayer;
+﻿using Entity;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
