@@ -31,8 +31,8 @@ namespace Entity
         public string CurrentPhone { get; set; }
         [Required, StringLength(50)]
         public string CurrentMail { get; set; }
-        [Required, StringLength(50)]
-        public string AuthorizedName1{ get; set; }
+        [StringLength(50)]
+        public string AuthorizedName1 { get; set; }
         [StringLength(50)]
         public string AuthorizedName2 { get; set; }
         [StringLength(50)]
@@ -43,19 +43,19 @@ namespace Entity
         public string AuthorizedDepartment2 { get; set; }
         [StringLength(50)]
         public string AuthorizedDepartment3 { get; set; }
-        [Required,StringLength(12)]
+        [StringLength(12)]
         public string AuthorizedPhone1 { get; set; }
         [StringLength(12)]
         public string AuthorizedPhone2 { get; set; }
         [StringLength(12)]
         public string AuthorizedPhone3 { get; set; }
-        [Required, StringLength(12)]
+        [Required,StringLength(12)]
         public string AuthorizedMPhone1 { get; set; }
         [StringLength(12)]
         public string AuthorizedMPhone2 { get; set; }
         [StringLength(12)]
         public string AuthorizedMPhone3 { get; set; }
-        [Required, StringLength(50)]
+        [StringLength(50)]
         public string AuthorizedMail1 { get; set; }
         [StringLength(50)]
         public string AuthorizedMail2 { get; set; }
