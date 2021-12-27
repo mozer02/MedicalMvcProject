@@ -29,10 +29,11 @@ namespace BusinessLayer.Concrete
         {
             return remployee.List(x=>x.Currents.isActive==true && x.Currents.CurrentGroups.Id==4);
         }
-        public List<Currents> GetTest()
-        {
-            return rcurrent.List();
-        }
+        //Repository Base tetiklemek için Test metodu yapıldı
+        //public List<Currents> GetTest()
+        //{
+        //    return rcurrent.List();
+        //}
         
     }
 }
